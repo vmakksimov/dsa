@@ -7,7 +7,9 @@
     "moduleDetection": "force",
     "strict": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "rootDir": ".",
   },
   "ts-node": {
     "esm": true
