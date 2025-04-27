@@ -98,37 +98,6 @@ class MyLinkedList {
       first = next;
     }
     return this.printList();
-
-    // console.log("head in revers", this.head);
-    // console.log("tail in reverse", this.tail);
-    // this.head.value = this.tail.value
-    // this.tail.value = this.head.value
-    // console.log("length", this.length);
-
-
-    // let count = 1;
-    // let headReverse;
-    // let tailReverse;
-    // let lengthReverse = 1;
- 
-    // while (Math.abs(count) <= this.length + 1) {
-    //   const leader = this.traverseToIndex(this.length + 1 - count);
-    //   console.log("leader", leader);
-
-    //   if (count === 1){
-    //     headReverse = leader;
-    //   } else {
-    //     headReverse.next = {
-    //         value: leader.value,
-    //         next: newNode
-    //     }
-    //   }
-      
-
-     
-     
-    //   count++;
-    // }
   }
 }
 
