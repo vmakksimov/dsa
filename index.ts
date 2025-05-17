@@ -4,4 +4,6 @@
 // export * from './DSA/hash_table/hash_table';
 // export * from './DSA/stack_and_queues/stack_and_queques'
 // export * from './DSA/stack_and_queues/stack_array'
-export * from './DSA/stack_and_queues/queue'
+// export * from './DSA/stack_and_queues/queue'
+// export * from "./DSA/stack_and_queues/queue_using_stack";
+export * from './DSA/binary_tree/binary_tree';
