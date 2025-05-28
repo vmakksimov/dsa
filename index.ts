@@ -6,4 +6,8 @@
 // export * from './DSA/stack_and_queues/stack_array'
 // export * from './DSA/stack_and_queues/queue'
 // export * from "./DSA/stack_and_queues/queue_using_stack";
-export * from './DSA/binary_tree/binary_tree';
+// export * from './DSA/binary_tree/binary_tree';
+// export * from './DSA/algorithms/recursion/factorial';
+// export * from './DSA/algorithms/sorting/bubble_sort';
+// export * from './DSA/algorithms/sorting/selection_sort';
+export * from './DSA/algorithms/sorting/insertion_sort';
