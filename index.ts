@@ -10,4 +10,5 @@
 // export * from './DSA/algorithms/recursion/factorial';
 // export * from './DSA/algorithms/sorting/bubble_sort';
 // export * from './DSA/algorithms/sorting/selection_sort';
-export * from './DSA/algorithms/sorting/insertion_sort';
+// export * from './DSA/algorithms/sorting/insertion_sort';
+export * from './DSA/algorithms/sorting/merge_sort';
