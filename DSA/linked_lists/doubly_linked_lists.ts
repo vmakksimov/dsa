@@ -63,7 +63,7 @@ class DoublyLinkedList {
   }
 
   insert(index: number, value: number) {
-    console.log("this head", this.head);
+    // console.log("this head", this.head);
     const newNode: Node | null = {
       value: value,
       next: null,
@@ -85,7 +85,7 @@ class DoublyLinkedList {
     let currentNode: Node | null = this.head;
     while (count !== index && currentNode) {
       currentNode = currentNode.next;
-      console.log("current next", currentNode);
+      // console.log("current next", currentNode);
       count++;
     }
     return currentNode;
