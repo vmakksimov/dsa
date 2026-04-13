@@ -45,7 +45,7 @@ class BinaryTree {
     if (!currentNode) {
       return null;
     }
-    
+
     while (currentNode) {
       if (value < currentNode.value) {
         currentNode = currentNode.left;
@@ -54,9 +54,8 @@ class BinaryTree {
       } else if (value === currentNode.value) {
         return currentNode;
       }
-      
     }
-    return null
+    return null;
   }
 
   remove(value: number) {
@@ -135,16 +134,61 @@ class BinaryTree {
       }
     }
   }
+
+  isValidBST(root: Node | null): boolean {
+      let currentNode = root;
+    let prevValue = -Infinity; 
+
+    while (currentNode !== null) {
+        if (currentNode.left === null) {
+            if (currentNode.value <= prevValue) {
+            
+                // Not in ascending order
+                return false;
+            }
+            prevValue = currentNode.value;
+            currentNode = currentNode.right;
+        } else {
+        
+            // Find the inorder predecessor of currentNode
+            let pre = currentNode.left;
+            while (pre.right !== null && pre.right !== currentNode) {
+                pre = pre.right;
+            }
+
+            if (pre.right === null) {
+            
+                // Create a temporary
+                // thread to the currentNode node
+                pre.right = currentNode;
+                currentNode = currentNode.left;
+            } else {
+                pre.right = null;
+                if (currentNode.value <= prevValue) {
+                
+                    // Not in ascending order
+                    return false;
+                }
+                prevValue = currentNode.value;
+                currentNode = currentNode.right;
+            }
+        }
+    }
+
+    return true;
+  }
 }
 
 const tree = new BinaryTree();
-tree.insert(9);
-tree.insert(4);
-tree.insert(6);
-tree.insert(20);
-tree.insert(170);
-tree.insert(180);
-tree.insert(15);
+tree.insert(2);
 tree.insert(1);
-console.log(tree);
-console.log(tree.lookup(1));
+tree.insert(3);
+
+// tree.insert(3);
+// tree.insert(6);
+// tree.insert(180);
+// tree.insert(15);
+// tree.insert(1);
+// console.log(tree);
+// console.log(tree.lookup(1));
+console.log(tree.isValidBST(tree.root));
