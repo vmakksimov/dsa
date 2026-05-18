@@ -10,7 +10,6 @@ function findArea(heights: number[]): number {
     const currentArea = waterHeight * width;
     maxArea = Math.max(maxArea, currentArea);
 
-    // Now it's clear: we are comparing the values AT the indices
     if (heights[startIndex] < heights[endIndex]) {
       startIndex++;
     } else {

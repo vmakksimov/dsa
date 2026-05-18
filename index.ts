@@ -18,4 +18,10 @@
 // export * from './DSA/algorithms/BFS/bfs';
 //// faang
 // export * from './FAANG/Google-array/sum_two_integers';
-export * from './FAANG/Google-array/container_with_most_water';
+// export * from './FAANG/Google-array/container_with_most_water';
+// export * from './FAANG/Google-array/tripping_water';
+// export * from './FAANG/Google-string/typed_out';
+// export * from './FAANG/Google-string/longest_substring_without_repeat';
+// export * from './FAANG/Google-string/is_palindrome';
+// export * from './FAANG/Google-string/is_anagram'
+export * from './FAANG/Google-array/group_anagarms'
