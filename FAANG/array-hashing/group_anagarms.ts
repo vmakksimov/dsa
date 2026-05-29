@@ -14,17 +14,15 @@ function groupAnagrams(s: string[]) {
 
 function groupAnagramsOptimized(strs) {
   let n = strs.length;
-  let myMap = new Map()
+  let myMap = new Map();
 
   for (let i = 0; i < n; i++) {
     let word = strs[i];
     const sorted = word.split("").sort().join("");
 
-    if (myMap.get(sorted) !== undefined) myMap.get(sorted).push(word);
-    else myMap.set(sorted, [word])
+    if (myMap.has(sorted)) myMap.get(sorted).push(word);
+    else myMap.set(sorted, [word]);
   }
-
- 
 
   return [...myMap.values()];
 }

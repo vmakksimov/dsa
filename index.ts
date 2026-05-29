@@ -24,4 +24,9 @@
 // export * from './FAANG/Google-string/longest_substring_without_repeat';
 // export * from './FAANG/Google-string/is_palindrome';
 // export * from './FAANG/Google-string/is_anagram'
-export * from './FAANG/Google-array/group_anagarms'
+// export * from './FAANG/Google-array/group_anagarms'
+// export * from './FAANG/Google-array/top_k_frequent'
+// export * from './FAANG/Google-string/encode_decode'
+// export * from './FAANG/Google-array/product_except_self'
+// export * from './FAANG/array-hashing/valid_sudoku'
+export * from './FAANG/two-pointers/three_sum'
